@@ -21,6 +21,7 @@ public class GameController : MonoSingleton<GameController>
 
     public List<Player> players = new List<Player>();
 
+
     //public Map currentMap;  // -- map loading to pick spawn points and what not...
 
     void Start()
@@ -48,7 +49,7 @@ public class GameController : MonoSingleton<GameController>
     }
 
     void HandleGameplay()
-    { 
+    {
         int alivePlayers = players.Count;
         foreach(Player p in players)
         {
